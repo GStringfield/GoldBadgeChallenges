@@ -18,7 +18,7 @@ namespace _06_Green_Plan_Reository_Tests
 
             _greenRepo.AddCarToList(car);
            
-           
+            List<Car>list = _greenRepo.SeeAllCarsOnList();
 
             int actual = list.Count;
             int expected = 1;
@@ -38,7 +38,7 @@ namespace _06_Green_Plan_Reository_Tests
             _greenRepo.AddCarToList(car);
             _greenRepo.AddCarToList(carTwo);
 
-            _greenRepo.AddCarToList(3);
+            _greenRepo.RemoveCarFromList(256);
 
             int actual = _greenRepo.SeeAllCarsOnList().Count;
             int expected = 1;
