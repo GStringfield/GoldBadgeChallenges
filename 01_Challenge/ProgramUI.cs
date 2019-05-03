@@ -56,12 +56,11 @@ namespace _01_Challenge
 
         public void CreateAndAddMealToMenu()
         {
-            Console.WriteLine("what is the name of the meal?");
-            string mealName = Console.ReadLine();
+           
+            Console.Write("Enter the number on the badge: ");
+            int badgeID = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("What is the number of the meal on the menu?");
-            string mealNumberAsString = Console.ReadLine();
-            int mealNumber = int.Parse(mealNumberAsString);
+           
 
             Console.WriteLine("What is the description of the meal?");
             string mealDescription = Console.ReadLine();
